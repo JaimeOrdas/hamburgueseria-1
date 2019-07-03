@@ -118,7 +118,7 @@ header .hamburguesa {
 }
 
 .hero > div h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     font-family: 'Handlee', cursive;
 }
 
@@ -150,6 +150,92 @@ header .hamburguesa {
     font-size: 1.5em;
 }
 
+/* fin hero */
+
+/* Main  */
+
+section {
+    padding: 50px 0px;
+}
+
+main section h2 {
+    color: black;
+    font-family: 'Handlee', cursive;
+    text-align: center;
+    font-size: 2em;
+}
+
+main section h2 span {
+    color: #fa573a;
+}
+
+main section .underline {
+    position: relative;
+    width: 9.375em;
+    margin: 0 auto;
+    color: #fa573a;
+}
+
+main section .underline hr {
+    border-color: #fa573a;
+}
+
+main section .underline span {
+    display: block;
+    font-weight: bold;
+    position: absolute;
+    top: -7px;
+    left: 67px;
+}
+
+main section .flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+main section .flex article {
+    width: 33%;
+    border-left: 1px solid #444;
+    padding: 0px 25px;
+}
+
+main #ourservices article .icon {
+    color: #fa573a;
+    border: 2px solid #fa573a;
+    padding: 10px;
+    font-size: 120%;
+}
+
+main #ourservices article h3 {
+    font-weight: bold;
+    margin: 15px 0px;
+    font-size: 120%;
+}
+
+main #ourservices article p {
+    color: #aaa;
+}
+
+.fa-truck-moving {
+    transform: rotateY(180deg);
+}
+
+main .enlace {
+    color: #fa573a;
+    font-weight: bold;
+    margin: 20px 0px 0px 0px;
+    display: inline-block;
+}
+
+main .enlace i {
+    transition: 1s;
+}
+
+main .enlace:hover i {
+    transform: translate(10px);
+}
+
 @media (max-width: 768px) {
     header .submenu .row div span span, header .submenu .row div a span {
         font-size: 70%;
@@ -161,6 +247,19 @@ header .hamburguesa {
 
     header .submenu .row div:nth-child(3), header .submenu .row div:nth-child(4) {
         text-align: center;
+    }
+
+    main section .flex article {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    main section .flex article:last-child {
+        width: 100%;
+    }
+
+    main section .flex article:first-child, main section .flex article:last-child {
+        border-left: 0px;
     }
 }
 
@@ -208,5 +307,12 @@ header .hamburguesa {
 
     .hero {
         height: 450px;
+    }
+
+    main section .flex article {
+        width: 100%;
+        border-left: 0px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #444;
     }
 }
