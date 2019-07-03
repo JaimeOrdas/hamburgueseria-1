@@ -36,6 +36,8 @@ img {
     clear: both;
 }
 
+/* comienzo de header */
+
 header .submenu {
     background-color: #21242e;
     color: #fff;
@@ -97,6 +99,57 @@ header .hamburguesa {
     display: none;
 }
 
+/* fin de header */
+
+/*hero */
+
+.hero {
+    background-image: url("../images/fondo.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-color: #444;
+    background-blend-mode: soft-light;
+    height: 600px;
+}
+
+.hero > div {
+    padding: 15% 10%;
+    color: white;
+}
+
+.hero > div h1 {
+    font-size: 2em;
+    font-family: 'Handlee', cursive;
+}
+
+.hero > div h2 {
+    color: #fa573a;
+    font-size: 1.25em;
+    margin: .8em 0%;
+}
+
+.hero .boton {
+    background-color: #fa573a;
+    padding: .9em;
+    display: inline-block;
+    margin: .8em 0%;
+    border: 2px solid #fa573a;
+}
+
+.hero .boton:hover {
+    background-color: transparent;
+    color: #fa573a;
+}
+
+.hero .social {
+    display: flex;
+}
+
+.hero .social li {
+    margin-right: 15px;
+    font-size: 1.5em;
+}
+
 @media (max-width: 768px) {
     header .submenu .row div span span, header .submenu .row div a span {
         font-size: 70%;
@@ -151,5 +204,9 @@ header .hamburguesa {
 
     header nav .menu li:last-child {
         border-bottom: 0px;
+    }
+
+    .hero {
+        height: 450px;
     }
 }
