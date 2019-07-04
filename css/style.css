@@ -128,7 +128,7 @@ header .hamburguesa {
     margin: .8em 0%;
 }
 
-.hero .boton {
+ .boton {
     background-color: #fa573a;
     padding: .9em;
     display: inline-block;
@@ -136,7 +136,7 @@ header .hamburguesa {
     border: 2px solid #fa573a;
 }
 
-.hero .boton:hover {
+ .boton:hover {
     background-color: transparent;
     color: #fa573a;
 }
@@ -235,7 +235,35 @@ main .enlace i {
 main .enlace:hover i {
     transform: translate(10px);
 }
+main #aboutus .columna{
+    width: 50%;
+    padding: 15px;
+}
+main #aboutus .imagen .marco{
+    border: 2px solid #fa573a;
+    transform: rotateZ(10deg);
+    transition: transform 1s;
+    display: block;
 
+}
+main #aboutus .imagen .marco img{
+      transform: rotateZ(-10deg);
+      transition: 1s;
+}
+main #aboutus .imagen:hover .marco {
+    transform: rotateZ(0deg);
+}
+main #aboutus .imagen:hover img {
+    transform: rotateZ(0deg);
+}
+main #aboutus h3 {
+    font-weight: bold;
+    font-size: 110%;
+}
+main #aboutus h4 {
+    color: #fa573a;
+    margin: 10px 0px;
+}
 @media (max-width: 768px) {
     header .submenu .row div span span, header .submenu .row div a span {
         font-size: 70%;
@@ -319,7 +347,12 @@ main .enlace:hover i {
        margin-right: 0px;
        ; 
     }
-    
+    main #aboutus .columna{
+        width: 100%;
+    }
+    main #about .flex {
+        flex-direction: column-reverse;
+    }
 }
 @media (max-width:1100px){
     .hero>div{
